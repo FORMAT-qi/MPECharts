@@ -1,0 +1,16 @@
+<button bindtap="onDetaliClick">点我，快点我！</button>
+
+<view class='dailog_view' wx:if="{{isShow}}" catchtouchmove='catchtouchmove'>
+  <view class="dailog_screen" catchtouchmove='catchtouchmove'>
+    <image class="close" src="../../resources/close.png" bindtap="onDetaliCloseClick" catchtouchmove='catchtouchmove'></image>
+    <view class="dailog-title" catchtouchmove='catchtouchmove'>我是一个大弹窗</view>
+    <view class="dailog-detail" catchtouchmove='catchtouchmove'>弹出尊严</view>
+    <view class="cu-capsule">
+     <view wx:for="{{timeYears}}" wx:key="id" class="cu-tag {{ item.selected == true?'cu-tag-selected':''}}" bindtap="onDaiLogYearsClick"  data-id="{{item.id}}" >{{item.year}}年</view>
+    </view>
+    <view class="mychart-view" wx:if="{{isShow}}" catchtouchmove="catchtouchmove">
+      <ec-canvas id="mychart" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+    </view>
+  </view>
+  <view class="background_screen" bindtap="onDetaliCloseClick" catchtouchmove='catchtouchmove'></view>
+</view>

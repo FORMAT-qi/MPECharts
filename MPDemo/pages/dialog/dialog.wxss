@@ -1,0 +1,93 @@
+
+
+/* LPR解释框 */
+
+.dailog_screen {
+  width: 580rpx;
+  height: 800rpx;
+  border-radius: 16rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: 50rpx;
+}
+.dailog_screen .close{
+  width: 92rpx;
+  height: 92rpx;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* margin: 28rpx; */
+  padding: 28rpx;
+}
+
+.dailog_screen .dailog-title {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #2c2f32;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 50rpx;
+  padding: 34rpx 0 20rpx 0;
+}
+
+.dailog_screen .dailog-detail {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #8a8f96;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 44rpx;
+  padding: 0 50rpx 20rpx 50rpx;
+}
+
+.dailog-image {
+  width: 480rpx;
+  height: 238rpx;
+  display: block;
+  margin-top: 34rpx;
+}
+.cu-capsule{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+  font-size: 28rpx;
+}
+.cu-capsule .cu-tag{
+  height: 50rpx;
+  width: 132rpx;
+  line-height: 50rpx;
+  color: #8F9297;
+  border: 1px  solid #8f9297;
+  position: relative;
+}
+.cu-capsule:first-child{
+  left: 1px;
+}
+.cu-capsule .cu-tag-selected{
+ background: #2176ED;
+ border: 1px solid #2176ED;
+ color: #fff;
+}
+
+.mychart-view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 910;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+ec-canvas {
+  width: 550rpx;
+  height: 264rpx;
+}
